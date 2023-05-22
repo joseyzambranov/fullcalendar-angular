@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FullCalendarModule
+    FullCalendarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
